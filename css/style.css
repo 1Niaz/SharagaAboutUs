@@ -1,0 +1,303 @@
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.navbar__item__link{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lang select{
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #EAA360;
+}
+
+footer{
+    background-color: #212121;
+    color: #fff;
+    padding: 48px 0;
+    margin-top: 50px;
+}
+
+.footer__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__top{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer__top .logo{
+    width: 97px;
+    height: 97px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.footer__top .logo img{
+    /* width: 100%;
+    height: 100%; */
+    width: 97px;
+    height: 97px;
+}
+
+.footer__title{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__bottom{
+    display: flex;
+    gap: 98px;
+}
+
+.ladno{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ladno span{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spec h2, .docs h2{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin: 45px 0 20px 0;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.more{
+    color: #9A9A9A;
+    text-decoration: none;
+}
+
+.card{
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid #E3E3E3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.card .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.docs__inner{
+    text-align: center;
+}
+
+.docs__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.doc span{
+    font-weight: 700;
+}
+
+.doc{
+    color: #000;
+    font-size: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.doc .cover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.doc .cover img{
+    width: 60%;
+}
+
+.docs h2{
+    margin-bottom: 0;
+}
+
+.docs .da{
+    font-size: 24px;
+    font-weight: 500;
+    color: #453E40;
+    margin: 16px 0 50px 0;
+}
+
+.docs__list .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.burger__menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+    .doc{
+        grid-template-rows: 1fr 2fr;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .docs__list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .doc .cover img{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar, .lang{
+        display: none;
+    }
+    .burger__menu{ display: block; }
+    .spec h2, .docs h2{
+        font-size: 32px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        font-size: 16px;
+    }
+    .docs__list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .doc .cover img{
+        width: 70%;
+    }
+    .docs .da{
+        font-size: 20px;
+    }
+    .doc{
+        grid-template-rows: 1fr 2fr;
+    }
+    .footer__bottom{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__inner{
+        /* text-align: center; */
+        gap: 30px;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .footer__title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .spec h2, .docs h2{
+        font-size: 24px;
+    }
+    .card{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    .docs__list{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .doc .cover img{
+        width: 50%;
+    }
+    .doc{
+        grid-template-rows: 2fr 1fr;
+    }
+    .docs .da{
+        font-size: 16px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
