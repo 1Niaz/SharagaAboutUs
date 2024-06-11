@@ -23,6 +23,7 @@
 
 .lang select{
     border: none;
+    outline: none;
     font-weight: 600;
     font-size: 20px;
     color: #EAA360;
@@ -293,6 +294,161 @@ footer{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.categories{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    margin: 16px 0;
+}
+
+.category{
+    color: #979797;
+}
+
+.category.choosen{
+    color: #000;
+}
+
+.news__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:    'news1 news1 news1 news2'
+                            'news1 news1 news1 news3'
+                            'news1 news1 news1 news4';
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.news__item{
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+
+.news .info{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bg__img{
+    height: 100%;
+    width: 100%;
+
+    img{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.news__item .info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title{
+        font-size: 16px;
+    }
+    .desc{
+        font-size: 14px;
+    }
+}
+
+.news__item1 .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 10px;
+
+    .title{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .desc{
+        font-size: 18px;
+        font-weight: 500;
+        width: 500px;
+    }
+    .chtoto{
+        position: absolute;
+        top: 24px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.news__item1{
+    grid-area: news1;
+}
+
+
+
+
+
+.prepody h2{
+    margin: 24px 0;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.Daaaaaaa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Daaaaaaa img{
+    width: 100%;
+    height: 100%;
+}
+
+.Yeeeees{
+    .title{
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .desc, .Nooooo{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .desc{
+        color: #717171;
+    }
+    .Nooooo{
+        margin: 5px 0 10px 0;
+        display: flex;
+        gap: 30px;
+        color: #979797;
+    }
+}
 
 
 
