@@ -26,11 +26,12 @@ main{
 }
 
 .container{
-    width: 1280px;
+    /* width: 1280px; */
+    width: min(1280px, 90%);
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
     .container{
         width: 1024px;
     }
@@ -44,7 +45,7 @@ main{
     .container{
         width: 90vw;
     }
-}
+} */
 
 
 
